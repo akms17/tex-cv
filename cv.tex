@@ -1,0 +1,108 @@
+\documentclass[margin,centered,11pt]{res}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks,urlcolor=blue}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+% if using pdflatex:
+\setlength{\pdfpagewidth}{\paperwidth}
+\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+\name{ Akshay Shirahatti \vspace*{.3in}}
+
+\begin{resume}
+
+\section{\sc Interests}
+Information retrieval, Distributed systems, NLP \& statistical methods for large datasets.
+
+\section{\sc Highlights}
+\vspace*{+.1in}
+\begin{list2}
+\item 5+ years of experience working in the \textbf{Big Data} \& \textbf{Information Retrieval} domain
+\item Currently working as \textbf{Big Data Engineer} at \textit{DataSift}. 
+\item Worked as Data Mining Engineer at \textit{Mendeley}. 
+\item Awarded \textbf{MSc in Computer Science} with \textit{Distinction} from \textit{University of Edinburgh}
+\item Experience in building large scale data processing pipelines
+\end{list2}
+
+\section{\sc Skills} 
+\begin{list2}
+\item Scala, Java, Python(scripts), Pig(prior experience), Linux shell scripting, R(scripts)
+\item Elasticsearch, Kafka, Hadoop, Apache Lucene, HBase, Solr, AWS, Chef, Apache Spark(Workshop)
+\item Git, Linux Operating System, Continuous Integration.
+\end{list2}
+
+\section{\sc Experience}
+\textbf{Big Data Engineer} \newline
+\textbf{DataSift Ltd, Reading, UK} \hfill {\bf 2012 - present} \newline
+\newline
+\textit{Technology Stack}: Scala, Java, Kafka, Elasticsearch, Hadoop, HBase, MySQL, Akka, AWS 
+\vspace{+.1in}
+\begin{list2}
+\item Prototyped and productised a \textit{highly-scalable}, \textit{low-latency} data analysis platform to handle Facebook's real-time data stream. 
+\item Developed performance/feasibility evaluation and QA tools to de-risk the pilot product.
+\item Delivered privacy-first, anonymised APIs to help extract insights from the Facebook Data.
+\item Helped build the archive of {\em twitter, bit.ly, tumblr etc} on \textit{HDFS}.
+\begin{list2}
+ \item Archiving over 2TB/day working with a 200+ nodes \textit{Hadoop} cluster.
+ \item Custom \textit{HDFS} compaction workflow to satisfy the deletes processing SLA 
+ \item Fast sampled insights over the archive to estimate volumes and predict cost
+\end{list2}
+\end{list2}
+
+
+\textbf{Data Mining Engineer}\newline
+\textbf{Mendeley, London, UK} \hfill {\bf 2010 - 2012}\newline
+\newline
+\textit{Technology Stack}: Java, Apache Solr, Lucene, Hadoop, HBase, Pig, MySQL, AWS, Voldemort 
+\vspace{+.1in}
+\begin{list2}
+\item Scaling the Mendeley search platform and improving the relevancy ranking model for documents, users, groups in the Mendeley ecosystem.
+\item Developed a solution(based on \url{http://tinyurl.com/cd4klph}) to aid exploratory tag based navigation of the Mendeley document corpus.
+\item Worked on an analytic product to compute and serve top papers/journals/authors in a discipline/domain using Apache Pig.
+\end{list2}
+
+\section{\sc Education}
+\textbf{M.S Computer Science (Distinction)} \newline
+\textbf{University of Edinburgh, Scotland, UK} \hfill \textbf{2009 - 2010} \newline
+%{\em Department of Statistics} 
+\begin{list1}
+\item[] Relevant Academic Projects
+\begin{list2}
+\vspace{+.05in}
+\item \href{http://www.inf.ed.ac.uk/publications/thesis/online/IM100900.pdf}{Text Retrieval for Systematic Reviews}(Dissertation): To determine how \textit{Latent Dirichlet Allocation (LDA)} compares with pseudo-relevance feedback methodologies like \textit{Query expansion} and \textit{Relevance-based language models} in producing the required level of precision and recall needed for Systematic Reviews. The dataset consisted of 10 million documents from PubMed corpus. \href{http://mallet.cs.umass.edu/}{Mallet} toolkit was used for LDA implementation, query-document vector distance computation was done on Hadoop.
+\item Crawler for efficient content extraction from a set of hyper-linked news stories \& also design search, relevance ranking, near-duplicate detection solutions for the corpus.
+\end{list2}
+\vspace{+.05in}
+\item[] Key Modules: Text Technologies(Information Retrieval), Distributed Systems, Parallel Algorithms \& Programming, Advanced Databases.
+\end{list1}
+
+\textbf{Bachelor of Engineering, Computer Science }\newline
+\textbf{University of Mumbai, India} \hfill {\bf 2004 - 2008}\newline
+
+\end{resume}
+\end{document}
+
+
+
